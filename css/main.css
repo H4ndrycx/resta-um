@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    paddding: 0;
+
+    --background-wood: #311111;
+    --background-wood-black: #180303;
+}
+
+main {
+    height: 100vh;
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.board {
+    background: #021427;
+    border-radius: 20px;
+}
+
+.row {
+    display: flex;
+}
+
+.col {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 100%;
+    cursor: pointer;
+    border: 3px solid black;
+}
+
+.col[data-value="null"] {
+    background: none;
+    border: none;
+}
+
+.col[data-value="0"] {
+    background: var(--background-wood);
+    box-shadow: inset 5px -10px 5px var(--background-wood-black);
+}
+
+.col[data-value="1"] {
+    background-image: url('../assets/ball.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}

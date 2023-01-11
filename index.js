@@ -76,7 +76,7 @@ class Game {
 
         const isEatItem = this.board[eatItemRow][eatItemCol] === 1;
         const isItemOnStartSpace = this.board[this.row][this.col] === 1;
-        const isItemOnEndSpace = this.board[endRow][endCol] === 0;
+        const isItemOnEndSpace = this.board[endRow][endCol] === 1;
 
         if(!isItemOnStartSpace){
             throw new Error('Not a item to execute action');

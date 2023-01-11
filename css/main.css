@@ -2,6 +2,7 @@
     margin: 0;
     paddding: 0;
 
+    --background-main: #021427; 
     --background-wood: #311111;
     --background-wood-black: #180303;
 }
@@ -17,7 +18,7 @@ main {
 }
 
 .board {
-    background: #021427;
+    background: var(--background-main);
     border-radius: 20px;
 }
 
@@ -36,7 +37,8 @@ main {
 
 .col[data-value="null"] {
     background: none;
-    border: none;
+    border: 3px solid var(--background-main);
+    cursor: auto;
 }
 
 .col[data-value="0"] {
